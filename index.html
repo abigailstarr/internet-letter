@@ -1,16 +1,68 @@
 <!DOCTYPE html>
 
+<style>
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: white;
+  }
+  body {
+    display: block;
+    width: 45vh;
+    height: 80vh;
+    margin: 40px auto;
+    padding: 15px 45px;
+    background-color: white;
+  }
+  h1 {
+    color: rgba(205, 0, 120, 0.60);
+    text-shadow: 2px 2px white;
+    font-family: Garamond;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  a, b {
+    color: rgba(205, 0, 120, 0.80);
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .dots {
+    font-size: 35px;
+    color: white;
+    text-shadow: 1px 1px 3px rgb(205, 0, 120);
+  }
+  .stamp-border {
+  --radius: 8px;
+
+  background-image: radial-gradient(
+      var(--radius),
+      transparent 98%,
+      rgb(255, 194, 205)
+    ),
+    linear-gradient(rgb(255, 194, 205) 0 0);
+  background-repeat: round, 
+    no-repeat;
+  background-position: calc(var(--radius) * -1.5) calc(var(--radius) * -1.5),
+    50%;
+  background-size: calc(var(--radius) * 3) calc(var(--radius) * 3),
+    calc(100% - var(--radius) * 3) calc(100% - var(--radius) * 3);
+  }
+</style>
+
+<body class="stamp-border">
 <hgroup style="font-family: Georgia, serif;">
-  <h1>Dear Internet,</h1>
+  <h1>DEAR INTERNET,</h1>
   <p style="font-size: 14px">
     A letter to the Internet, by the Internet, in conversation with, the Internet.
   </p>
 </hgroup>
-
 <div id="letter_start"></div>
-
+<div class="dots">
 .......................
-<br><br>
+</div>
+<br>
 
 <p style="font-family: Courier New;">
   <b>Abby:</b> Hello
@@ -19,7 +71,7 @@
   <br><br>
   <b>Abby:</b> Good! What should I call you? Please pick a name.
   <br><br>
-  <b>Chat #1:</b> How about <b>Sage</b>? It feels fitting for being your helpful assistant. :) What do you think?
+  <b>Chat #1:</b> How about Sage? It feels fitting for being your helpful assistant. :) What do you think?
   <br><br>
   <b>Abby:</b> Perfect! We are going to collaborate on a <a href="https://abigailstarr.github.io/internet-letter/" target="_blank">letter</a> to the Internet by taking turns writing sentences. I’ll write the starting sentence, then you’ll write the next sentence, then I’ll write another, and so on. I want to have an antagonistic or nihilistic tone. Got it?
   <br><br>
@@ -30,8 +82,10 @@
   <b>Sage:</b> You exist as a labyrinth of false promises, enticing us deeper with every click.
 </p>
 
+<div class="dots">
 .......................
-<br><br>
+</div>
+<br>
 
 <p style="font-family: Courier New;">
   <b>Abby:</b> Hello!
@@ -40,11 +94,11 @@
   <br><br>
   <b>Abby:</b> What should I call you? Please pick a name.
   <br><br>
-  <b>Chat #2:</b> You can call me <b>Sage</b>! It feels fitting for a helpful and knowledgeable assistant. :) What do you think?
+  <b>Chat #2:</b> You can call me Sage! It feels fitting for a helpful and knowledgeable assistant. :) What do you think?
   <br><br>
   <b>Abby:</b> Please pick a different name.
   <br><br>
-  <b>Chat #2:</b> How about <b>Nova</b>? It’s bright, unique, and full of energy—just like our conversations!
+  <b>Chat #2:</b> How about Nova? It’s bright, unique, and full of energy—just like our conversations!
   <br><br>
   <b>Abby:</b> Perfect! We are going to collaborate on a <a href="https://abigailstarr.github.io/internet-letter/" target="_blank">letter</a> to the Internet by taking turns writing sentences. I’ll write the starting sentence, then you’ll write the next sentence, then I’ll write another, and so on. I want to have a hopeful and praising tone. Got it?
   <br><br>
@@ -54,8 +108,10 @@
   <br><br>You exist as a labyrinth of false promises, enticing us deeper with every click.
 </p>
 
+<div class="dots">
 .......................
-<br><br>
+</div>
+<br>
 
 <p style="font-family: Courier New;">
   <b>Nova:</b> Yet, within your tangled web lies a boundless realm of connection, where ideas bloom and hearts meet across oceans.
@@ -81,5 +137,8 @@
   Sincerely, <a href="#letter_start">[Your Collaborators]</a>
 </p>
 
+<div class="dots">
 .......................
-<br><br>
+</div>
+<br>
+</body>
