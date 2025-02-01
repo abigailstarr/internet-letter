@@ -68,15 +68,25 @@
     display: none;
     width: 100px;
     height: auto;
-    z-index: 1000;
   }
   
   .hover-link:hover ~ .hover-media {
-    display: block !important;
+    display: block;
+  }
+  
+  #france {
+    width: 100px;
+    position: fixed;
+    top: 20px;
+    right: 250px;
+    z-index: 10;
   }
 </style>
 
 <body>
+  <img id="france" src="images/frances_lay.png"
+   alt="Frances laying down">
+  
   <div class="outer-letter stamp-border">
     <div class="inner-letter">
       <hgroup>
