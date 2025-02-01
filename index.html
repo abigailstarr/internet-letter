@@ -63,6 +63,17 @@
   #subhead {
     font-size: 14px
   }
+  
+  .hover-media {
+    display: none;
+    width: 100px;
+    height: auto;
+    z-index: 1000;
+  }
+  
+  .hover-link:hover ~ .hover-media {
+    display: block !important;
+  }
 </style>
 
 <body>
@@ -71,8 +82,8 @@
       <hgroup>
         <h1>DEAR INTERNET,</h1>
         <p id="subhead">
-          a letter to the <a class="hover-link" data-target="gif-1">Internet</a>,<br> by the <a class="hover-link" data-target="gif-2">Internet</a>,<br>
-          in conversation with,<br>the <a class="hover-link" data-target="gif-3">Internet</a>.
+          a letter to the <a class="hover-link" data-target="image-1">Internet</a>,<br> by the <a class="hover-link" data-target="image-2">Internet</a>,<br>
+          in conversation with,<br>the <a class="hover-link" data-target="image-3">Internet</a>.
         </p>
       </hgroup>
       <div class="dots">
@@ -155,22 +166,17 @@
       <div class="dots">
         ..................
       </div>
-
-      <video id="gif-1" class="hover-media" style="display: none;">
-        <source src="images/3.mp4"
-                type="video/mp4">
-      </video>
+      <img id="image-1" class="hover-media"
+           src="https://abigailstarr.github.io/internet-letter/images/frances_lay.png"
+           alt="Frances laying down">
       
-      <video id="gif-2" class="hover-media" style="display: none;">
-        <source src="images/3.mp4"
-                type="video/mp4">
-      </video>
+      <img id="image-2" class="hover-media"
+           src="https://abigailstarr.github.io/internet-letter/images/frances_stand.png"
+           alt="Frances standing">
       
-      <video id="gif-3" class="hover-media" style="display: none;">
-        <source src="images/3.mp4"
-                type="video/mp4">
-      </video>
-      
+      <img id="image-3" class="hover-media"
+           src="https://abigailstarr.github.io/internet-letter/images/frances_scream.png"
+           alt="Frances screaming">
       <br>
     </div>
   </div>
