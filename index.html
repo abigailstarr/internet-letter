@@ -63,37 +63,33 @@
   #subhead {
     font-size: 14px
   }
-  
+
   .hover-media {
     display: none;
-    width: 100px;
+    width: 300px;
     height: auto;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    
   }
-  
-  .hover-link:hover ~ .hover-media {
+
+  .hover-link:hover + .hover-media {
     display: block;
-  }
-  
-  #france {
-    width: 100px;
-    position: fixed;
-    top: 20px;
-    right: 250px;
-    z-index: 10;
   }
 </style>
 
 <body>
-  <img id="france" src="images/frances_lay.png"
-   alt="Frances laying down">
-  
   <div class="outer-letter stamp-border">
     <div class="inner-letter">
       <hgroup>
         <h1>DEAR INTERNET,</h1>
         <p id="subhead">
-          a letter to the <a class="hover-link" data-target="image-1">Internet</a>,<br> by the <a class="hover-link" data-target="image-2">Internet</a>,<br>
-          in conversation with,<br>the <a class="hover-link" data-target="image-3">Internet</a>.
+          a letter to the
+          <a class="hover-link" data-target="image-1">Internet,</a> <img id="image-1" class="hover-media" src="https://abigailstarr.github.io/internet-letter/images/frances_lay.png" alt="Frances laying down">
+          <br> by the <a class="hover-link" data-target="image-2">Internet,</a> <img id="image-2" class="hover-media" src="https://abigailstarr.github.io/internet-letter/images/frances_stand.png" alt="Frances standing"><br>
+          in conversation with,<br>the <a class="hover-link" data-target="image-3">Internet.</a>
+          <img id="image-3" class="hover-media" src="https://abigailstarr.github.io/internet-letter/images/frances_scream.png" alt="Frances screaming">
         </p>
       </hgroup>
       <div class="dots">
@@ -176,17 +172,6 @@
       <div class="dots">
         ..................
       </div>
-      <img id="image-1" class="hover-media"
-           src="https://abigailstarr.github.io/internet-letter/images/frances_lay.png"
-           alt="Frances laying down">
-      
-      <img id="image-2" class="hover-media"
-           src="https://abigailstarr.github.io/internet-letter/images/frances_stand.png"
-           alt="Frances standing">
-      
-      <img id="image-3" class="hover-media"
-           src="https://abigailstarr.github.io/internet-letter/images/frances_scream.png"
-           alt="Frances screaming">
       <br>
     </div>
   </div>
